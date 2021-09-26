@@ -1,9 +1,5 @@
-# Source Code: ELT Demo with DBT on Redshift
+
 这是Blog [另辟蹊径: 在云端使用SQL语言实现数据转化，测试和文档维护]() 的代码仓库。
-
-
-
-## 代码说明
 
 
 
