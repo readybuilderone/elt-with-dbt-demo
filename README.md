@@ -29,7 +29,7 @@ npx cdk deploy --profile <YOUR-PROFILE>
 - Redshift的Host地址；
 - Redshift的Execute Role的ARN
 
-![image-20210927065939690](/Users/yihuh/Library/Application Support/typora-user-images/image-20210927065939690.png)
+![cdk-output](./assets/cdk-output.jpg)
 
 
 
@@ -57,5 +57,5 @@ Redshift的链接信息如下
 psql -h <endpoint> -U <userid> -d <databasename> -p <port>
 ```
 
-![image-20210926220407714](/Users/yihuh/Library/Application Support/typora-user-images/image-20210926220407714.png)
+![redshift-test](./assets/redshift-test.jpg)
 
