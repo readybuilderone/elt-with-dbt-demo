@@ -3,12 +3,18 @@ const project = new AwsCdkTypeScriptApp({
   cdkVersion: '1.95.2',
   defaultReleaseBranch: 'main',
   name: 'elt-with-dbt-demo',
-
-  // cdkDependencies: undefined,  /* Which AWS CDK modules (those that start with "@aws-cdk/") this app uses. */
-  // deps: [],                    /* Runtime dependencies of this module. */
-  // description: undefined,      /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],                 /* Build dependencies for this module. */
-  // packageName: undefined,      /* The "name" in package.json. */
-  // release: undefined,          /* Add release management to this project. */
+  cdkDependencies: [
+    '@aws-cdk/aws-codecommit',
+    '@aws-cdk/aws-codepipeline-actions',
+    '@aws-cdk/aws-codebuild',
+    '@aws-cdk/aws-ecr',
+    '@aws-cdk/aws-events-targets',
+    '@aws-cdk/aws-ec2',
+    '@aws-cdk/aws-redshift',
+    '@aws-cdk/aws-secretsmanager',
+    '@aws-cdk/aws-s3',
+    '@aws-cdk/aws-ecs',
+    '@aws-cdk/aws-iam',
+  ]
 });
 project.synth();
